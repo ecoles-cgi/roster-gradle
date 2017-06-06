@@ -25,4 +25,4 @@ cf_dev_organization: rscale-training-1
 cf_dev_space: edgar.coles@cgi.com
 cf_dev_hostname: roster-ecoles
 cf_dev_domain: cfapps.io
-cf_dev_manifest: app/manifest.yml
+cf_dev_manifest: manifest.yml
