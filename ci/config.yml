@@ -1,0 +1,28 @@
+build_task: pipelines/gradle/tasks/gradle-assemble.yml # don't change
+deploy_dev_task: pipelines/cf/tasks/blue-green-deploy.yml # don't change
+
+app_name: roster # don't change
+jar_name: ecoles-roster
+
+github_app_repo_uri: https://github.com/ecoles-cgi/roster-gradle.git
+github_app_repo_branch: master # don't change
+
+github_pipelines_repo_uri: https://github.com/ecoles-cgi/training-pipelines-initial.git 
+github_pipelines_repo_branch: master # don't change
+
+version_bucket: rscale-training-bucket # don't change
+version_bucket_region_name: us-west-2 # don't change
+
+version_key: ecoles-roster-version
+initial_version: 0.0.1
+
+artifact_regexp: ecoles-roster-(.*).jar
+artifact_bucket: rscale-training-bucket # don't change
+artifact_bucket_region_name: us-west-2 # don't change
+
+cf_dev_api: api.run.pivotal.io
+cf_dev_organization: rscale-training-1
+cf_dev_space: edgar.coles@cgi.com
+cf_dev_hostname: roster-ecoles
+cf_dev_domain: cfapps.io
+cf_dev_manifest: app/manifest.yml
