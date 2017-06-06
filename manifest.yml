@@ -1,0 +1,12 @@
+applications:
+- name: roster
+  path: artifact\ecoles-roster-(.*).jar
+  memory: 512M
+  buildpack: java_buildpack
+  instances: 1
+  random-route: true
+  env:
+    SPRING_PROFILES_ACTIVE: dev
+  services:
+    - db-cdb-roster
+    - logs-pt-roster
