@@ -1,7 +1,7 @@
 applications:
 - name: roster
   path: artifact\ecoles-roster-(.*).jar
-  memory: 512M
+  memory: 1G
   buildpack: java_buildpack
   instances: 1
   random-route: true
