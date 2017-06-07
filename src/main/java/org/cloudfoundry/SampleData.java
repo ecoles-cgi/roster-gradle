@@ -16,7 +16,7 @@ public class SampleData implements CommandLineRunner {
 	
 	@Override
 	public void run(String... strings) throws Exception {
-		repository.save(new Person("Frodo", "Baggins", "frodo@example.com", "123456789", "Speedy Delivery")); 
+		repository.save(new Person("Eddie", "Coles", "frodo@example.com", "123456789", "2cdeed02-8bc0-4a0a-a3ac-3aae164813a3")); 
 	}
 	
 }
