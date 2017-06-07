@@ -10,3 +10,4 @@ applications:
   services:
     - db-cdb-roster
     - logs-pt-roster
+    - config-store
